@@ -1,5 +1,7 @@
 # :hamburger:burgermenu
 
-preview page : https://jyejin99.github.io/burgermenu/
+### preview page
+https://jyejin99.github.io/burgermenu/
 
-![이미지 설명]()
+### 미리보기 이미지
+![미리보기](./burgermenu.jpg)
