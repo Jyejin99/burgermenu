@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #d9d9d9;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body ul, body li, body a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  height: 100vh;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 60px;
+  border-bottom: 6px solid black;
+  background-color: teal;
+}
+
+header .nav-left {
+  width: 36px;
+  height: 100%;
+}
+
+header .nav-left .burgers {
+  -webkit-transform: scale(3) translate(20px, 12px);
+          transform: scale(3) translate(20px, 12px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+header .nav-left .burgers .burger {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 1px;
+}
+
+header .nav-left .burgers li {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .nav-left .burgers li:nth-of-type(2) {
+  margin-top: 3px;
+}
+
+header .nav-left .burgers li:nth-of-type(3) {
+  margin-top: 3px;
+}
+
+header .nav-left .burgers.active li:nth-of-type(1) {
+  -webkit-transform: translate(0, 4px) rotate(45deg);
+          transform: translate(0, 4px) rotate(45deg);
+}
+
+header .nav-left .burgers.active li:nth-of-type(2) {
+  opacity: 0;
+}
+
+header .nav-left .burgers.active li:nth-of-type(3) {
+  -webkit-transform: translate(0, -6px) rotate(-45deg);
+          transform: translate(0, -6px) rotate(-45deg);
+}
+
+.nav_menu {
+  position: relative;
+  opacity: 0;
+  z-index: 2;
+  background-color: teal;
+  color: white;
+  width: 0%;
+  height: 100vh;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav_menu ul {
+  padding: 20px 40px;
+  position: relative;
+  z-index: 9999;
+}
+
+.nav_menu ul li {
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+.nav_menu.active {
+  opacity: 1;
+  width: 50%;
+}
+
+.nav_back {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  width: 0;
+  height: 100%;
+  top: 100px;
+}
+
+.nav_back.active {
+  width: 800px;
+}
+
+.logo {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
